@@ -1,0 +1,40 @@
+var items = ['第一项','第二项','第三项','第四项'];
+Page({
+  data:{
+    modalHidden1:true,
+    modalHidden2:true
+  },  
+  modalTap1:function(e)
+  {
+    this.setData(
+      {
+        modalHidden1:false
+      }
+    )
+  },
+  modalChange1:function(e)
+  {
+    this.setData(
+      {
+        modalHidden1:true
+      }
+    )
+  },
+  modalTap2:function(e)
+  {
+    this.setData(
+      {
+        modalHidden2:false
+      }
+    )
+  },
+  modalChange2:function(e)
+  {
+    this.setData(
+      {
+        modalHidden2:true
+      }
+    )
+  }
+
+})  

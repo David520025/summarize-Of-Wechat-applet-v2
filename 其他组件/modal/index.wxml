@@ -1,0 +1,19 @@
+<!--  对话框  -->
+<view>
+   <modal title="两个按钮" confirm-text="确定" 
+   cancel-text="取消" hidden="{{modalHidden1}}"
+   bindconfirm="modalChange1" bindcancel="modalChange1"
+   >
+       这是对话框的内容
+   </modal>
+   <modal title="一个按钮" no-cancel confirm-text="确定" 
+   cancel-text="取消" hidden="{{modalHidden2}}"
+    bindconfirm="modalChange2" bindcancel="modalChange2"
+   >
+       <image src="http://geekori.cn/img/weixin_code.png" style="width:100px;height:100px"/>
+   </modal>
+   <view style="margin:20px">
+      <button bindtap="modalTap1">点击弹出包含两个按钮的对话框</button>
+      <button style="margin-top:20px"  bindtap="modalTap2">点击弹出包含一个按钮的对话框</button>
+   </view>
+</view>

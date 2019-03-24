@@ -1,0 +1,49 @@
+Page(
+  {
+    data:
+    {    
+      index:0,
+      array:[
+        '沈阳','北京','天津','武汉'
+      ],
+      time:'12:30',
+      date:'2016-12-12',
+      date1:'2016-01'
+
+    },        
+    bindPickerChange:function(e)
+    {
+      console.log("地区选择：" + e.detail.value);
+      this.setData(
+        { 
+          index:e.detail.value 
+        }
+      )
+    },
+    bindTimeChange:function(e)
+    {
+      this.setData(
+        {
+          time:e.detail.value
+        }
+      ) 
+    },
+    bindDateChange:function(e)
+    {
+      this.setData(
+        {
+          date:e.detail.value
+        }
+      )
+    },
+    bindDateChange1:function(e)
+    {
+      this.setData(
+        {
+          date1:e.detail.value
+        }
+      )
+    }
+    
+  }
+)

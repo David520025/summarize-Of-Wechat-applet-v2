@@ -1,0 +1,30 @@
+<!-- 表单组件：input -->
+
+<view style="margin:20px">
+  <!--  placeholder：当input没有内容时显示的信息，value表示input当前输入的内容-->
+  <input placeholder="请输入你的名字"  value=""/>
+  <!-- placeholder-style、placeholder-class都用来设置placeholder的样式  
+  auto-focus：自动获得焦点，软键盘会自动弹出
+  -->
+  <input placeholder-style="color:red" placeholder="占位符字体是红色" auto-focus/>
+  <input style="margin-top:20px" placeholder="只有在点击按钮时才会获得焦点" focus="{{focus}}"/>
+  <button bindtap="bindButtonTap">使得输入框获取焦点</button>
+
+  <!-- maxlength ，默认值时140，如果是-1，表示长度不受限制 -->
+  <input style="margin-top:20px" maxlength="5" placeholder="最大能输入5个字符"/>
+
+  <!-- bindinput：用于监听输入的内容  -->
+  <view style="margin-top:20px">你输入的是：{{inputValue}}</view>
+  <input bindinput="bindKeyInput" placeholder="输入同步到view中" />
+  
+  <!-- 将<和>进行转义 -->
+  <input style="margin-top:20px" bindinput="bindReplaceInput" placeholder="将<和>进行转义"/>
+
+  <!--  输入close关闭软键盘 -->
+  <input style="margin-top:20px" bindinput="bindHideKeyboard" placeholder="输入close自动收起软键盘"/>
+
+  <input style = "margin-top:20px" type="emoji" placeholder="这是一个带有表情的输入框"/>
+  <input type="digit" placeholder="带小数点的数字键盘"/>
+  <input type="idcard" placeholder="身份证号输入键盘"/>
+  <input password="true" placeholder="请输入密码"/>
+</view>

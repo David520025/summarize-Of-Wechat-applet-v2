@@ -1,0 +1,13 @@
+.flex-wrp{
+    height: 100px;
+    display:flex;
+    background-color: #FFFFFF;
+}
+.flex-row{
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+}

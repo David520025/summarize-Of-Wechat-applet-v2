@@ -1,0 +1,2 @@
+<!-- 界面API：导航与返回页面  -->
+<button bindtap="onClick">导航到Page</button>

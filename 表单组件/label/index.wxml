@@ -1,0 +1,38 @@
+
+<!-- 表单组件：label -->
+
+<!-- label并不是用来录入信息的，而是用来将组件和文本进行绑定的的  -->
+
+<!--  可绑定在组件：button、checkbox、radio和switch  -->
+
+<!-- 绑定的方式
+1.  将待绑定在组件放到label中
+2.  使用label的for属性指定要绑定在组件id
+-->
+<view style="margin:20px" wx:for-items="{{checkboxItems}}">
+  <label>
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+    <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+    <text>{{item.value}}</text>
+  </label>
+</view>
+<radio-group>
+  <view style="margin:20px" wx:for-items="{{radioItems}}">
+    <radio value=" {{item.name}} " checked="{{item.checked}} " />
+    <radio value=" {{item.name}} " checked="{{item.checked}} " />
+    <radio id="{{item.name}}" value=" {{item.name}} " checked="{{item.checked}} " />
+    <radio value=" {{item.name}} " checked="{{item.checked}} " />
+    <label for="{{item.name}}">
+      <text>{{item.name}}</text>
+    </label>
+  </view>
+</radio-group>
+<view style="margin:20px" wx:for-items="{{checkboxItems}}">
+  <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+  <checkbox id="{{item.name}}1" value="{{item.name}}" checked="{{item.checked}}" />
+  <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+  <label for="{{item.name}}1"> 
+    <text>{{item.value}}</text>
+  </label>
+</view>

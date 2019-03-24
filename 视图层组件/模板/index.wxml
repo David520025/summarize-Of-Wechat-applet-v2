@@ -1,0 +1,41 @@
+
+<!--  视图层技术：模板（2）  -->
+<!--<view style="display:flex;flex-direction:row">
+  <view class="bc_green" style="width:100px;height:100px" />
+  <view class="bc_red" style="width:100px;height:100px" />
+  <view class="bc_blue" style="width:100px;height:100px" />
+  <view class="bc_yellow" style="width:100px;height:100px" />
+</view>
+<view style="display:flex;flex-direction:row">
+  <view class="bc_blue" style="width:100px;height:100px" />
+  <view class="bc_yellow" style="width:100px;height:100px" />
+  <view class="bc_green" style="width:100px;height:100px" />
+  <view class="bc_red" style="width:100px;height:100px" />
+</view>-->
+<!--  定义模板 -->
+<template name="rowSquares">
+  <view style="display:flex;flex-direction:row">
+    <view class="bc_{{color1}}" style="width:100px;height:100px" />
+    <view class="bc_{{color2}}" style="width:100px;height:100px" />
+    <view class="bc_{{color3}}" style="width:100px;height:100px" />
+    <view class="bc_{{color4}}" style="width:100px;height:100px" />
+  </view>
+</template>
+<!-- data传入的是变量名称，不是变量的值  -->
+<!-- <template is="rowSquares" data="{{color1, color2,color3,color4}}"/>
+<template is="rowSquares" data="{{color2,color1, color4,color3}}"/>-->
+
+<!--<template is="rowSquares" data="{{...colorItem1}}"/>
+<template is="rowSquares" data="{{...colorItem2}}"/>-->
+<template name="rowCountSquares">
+   <view style="display:flex; flex-direction:row">
+     <block wx:for="{{colorArray}}">
+       <view class ="bc_{{item}}" style="width:100px;height:100px"/>
+     </block>
+   </view>
+</template>
+
+<template is="rowCountSquares" data="{{...colorCountItem1}}"/>
+<template is="rowCountSquares" data="{{...colorCountItem2}}"/>
+<template is="rowCountSquares" data="{{...colorCountItem3}}"/>
+<template is="rowCountSquares" data="{{...colorCountItem4}}"/>

@@ -1,0 +1,28 @@
+<!-- 基础组件：icon -->
+
+<!--  icon只能显示系统内置的一些图标 -->
+<!--
+属性 
+size：Number类型，用于设置图标的尺寸，默认值时23
+type：String类型，用于设置系统图标的类型
+color：Color类型，用来设置图标的颜色，和css中的color是一样的
+-->
+
+<block wx:for-items="{{iconSize}}">
+  <icon type="success" size="{{item}}"/>
+</block>
+
+<view style="margin-top:30px">
+  <block wx:for-items="{{iconType}}">
+    <icon type="{{item}}" size="45"/>
+  </block>
+</view>
+
+<view style="margin-top:30px">
+  <block wx:for-items="{{iconColor}}">
+    <icon type="success" color="{{item}}" size="45"/>
+  </block>
+</view>
+
+
+

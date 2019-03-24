@@ -1,0 +1,4 @@
+<view style="margin:20px;display: flex;flex-direction: column;">
+  <text style="font-size:30px">网络类型：{{networkType}}</text> 
+  <button style="margin-top:20px" bindtap="onClick_NetworkType">获取网络类型</button>
+</view>

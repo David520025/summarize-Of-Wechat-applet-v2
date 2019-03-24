@@ -1,0 +1,26 @@
+
+<!-- 表单组件：checkbox -->
+
+<!--
+checkbox必须和checkbox-group一起使用
+checkbox-group，bindchange
+checkbox
+value：选中某个checkbox的返回值
+disabled
+checked：表示当前的checkbox是否选中
+-->
+<view style="margin:20px">
+  <checkbox-group bindchange="checkboxChange">
+    <checkbox style="display:block;margin-bottom:10px" wx:for-items="{{items}}">
+      <text style="margin-left:10px;font-size:18px">{{item.value}}</text>
+    </checkbox>
+  </checkbox-group>
+</view>
+<view style="margin:20px">
+  <checkbox-group bindchange="checkboxChange">
+    <label style="display:block;margin-bottom:10px" wx:for-items="{{items}}">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />
+      <text style="margin-left:10px;font-size:18px">{{item.value}}</text>
+    </label>
+  </checkbox-group>
+</view>

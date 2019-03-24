@@ -1,0 +1,26 @@
+
+<!--  视图层技术：wx:key属性  -->
+<!--
+<view wx:for="{{array}}">
+  {{item}}
+</view>
+-->
+<switch wx:for="{{objectArray}}" style="display:block;"  >
+  item{{item.id}}
+</switch>
+<button bindtap="switch">Switch</button> 
+<switch wx:for="{{objectArray1}}" style="display:block;" wx:key="id" >
+  item{{item.id}}
+</switch>
+<button bindtap="switch1">Switch（wx:key）</button> 
+
+<switch wx:for="{{numberArray}}" style="display:block;"  >
+  item{{item}}
+</switch>
+<button bindtap="addNumberToFront">AddNumberToFront</button> 
+
+
+<switch wx:for="{{numberArray1}}" style="display:block;" wx:key="*this" >
+  item{{item}}
+</switch>
+<button bindtap="addNumberToFront1">AddNumberToFront（wx:key）</button> 

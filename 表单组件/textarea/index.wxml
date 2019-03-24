@@ -1,0 +1,20 @@
+<!-- 表单组件：textarea -->
+
+<!-- 
+input：用来输入单行文本
+textarea：用来输入多行文本
+
+-->
+
+<view style="margin:20px">
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高"
+    style="background:#ff0" />
+</view>
+<view style="margin:20px">
+  <textarea placeholder="placeholder颜色是红色"  placeholder-style="color:red"  style="background:#ff0"/>
+</view>
+
+<view style="margin:20px">
+  <textarea placeholder="第一个获得焦点"  auto-focus/>
+</view>
+

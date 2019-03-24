@@ -1,0 +1,8 @@
+
+<swiper indicator-dots="{{indicatorDots}}"  vertical="{{vertical}}" current="2"  autoplay="{{true}}" interval="2000"  duration="5000" bindchange="change">
+       <block wx:for-items="{{background}}"  wx:key="unique">
+            <swiper-item>
+                  <view class="swiper-item bc_{{item}}"></view>
+             </swiper-item>
+        </block>
+</swiper>  

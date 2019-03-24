@@ -1,0 +1,6 @@
+<view style="margin:20px;display: flex;flex-direction: column;"> 
+  <button bindtap="onClick_ShowToast">显示Toast</button>
+  <button style="margin-top:20px" bindtap="onClick_HideToast">隐藏Toast</button>
+  <button style="margin-top:20px" bindtap="onClick_ShowModal">显示模态窗口</button>
+  <button style="margin-top:20px" bindtap="onClick_ShowActionSheet">显示操作菜单</button>
+</view>  

@@ -1,0 +1,14 @@
+<template name="NumBadge">
+  <view style="position: relative; margin-top: 1.17647059em;background-color: #FFFFFF;line-height: 1.41176471;font-size: 17px;">
+    <view class="weui-cell ">
+      <view class="weui-cell__hd" style="position: relative;margin-right: 10px;background-color:#DDDDDD">
+        <image src="{{imageSrc}}" style="width: 100px; height: 100px; display: block" />
+        <view class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">{{number}}</view>
+      </view>
+      <view class="weui-cell__bd" style="visibility: {{showText}}">
+        <view>{{title}}</view>
+        <view style="font-size: 13px;color: #888888;">{{detail}}</view>
+      </view>
+    </view>
+  </view>
+</template>

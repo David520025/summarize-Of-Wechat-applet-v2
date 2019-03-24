@@ -1,0 +1,13 @@
+<!-- 页面导航 -->
+<view style="margin:30px">
+    <navigator url="../page1/page1?title=跳转到新页面">
+        <button>跳转到新页面</button>
+    </navigator>
+    <navigator style="margin-top:20px" url="../page2/page2?title=在当前页面打开&color=red" redirect>
+        <button>在当前页面打开</button>
+    </navigator>
+</view>
+
+
+
+ 

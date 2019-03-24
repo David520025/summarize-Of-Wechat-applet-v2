@@ -1,0 +1,38 @@
+<!-- 表单组件：button -->
+
+<!-- 
+form
+可录入的组件
+checkbox、input、radio、switch、picker、slider、textarea
+
+button submit
+-->
+
+<!--
+button的属性
+1. size：String类型，默认值：default，还可以指定mini
+2. type：String类型，默认值：defaultdefault，设置按钮的样式类型，还可以设置primary,warn
+3. plain：Boolean类型，默认值：false，设置按钮是否镂空，背景色透明
+4. disabled
+5. loading
+6. form-type
+7. hover-class：用来指定按钮按下去的样式名称
+button-hover：{background-color:rgba(0,0,0,0.1）；opacity:0.7;}
+-->
+<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+   disabled="{{disabled}}"  bindtap="default">
+   default
+</button>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+   disabled="{{disabled}}" >
+   primary
+</button>
+<button type="warn" size="{{warnSize}}" loading="{{loading}}" plain="{{plain}}"
+   disabled="{{disabled}}" >
+   warn
+</button>
+
+<button hover-class="hover" bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+<button bindtap="setPlain">点击设置以上按钮plain属性</button>
+<button bindtap="setLoading">点击设置以上按钮loading属性</button>
+

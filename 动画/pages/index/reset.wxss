@@ -1,0 +1,11 @@
+/*小程序给默认组件提供了类似weui的样式，这里将这些样式reset掉*/
+
+button {
+  background: none;
+
+  border-radius: 0;
+}
+
+button::after {
+ display: none;
+}

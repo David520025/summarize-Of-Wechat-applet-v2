@@ -1,0 +1,6 @@
+.hover
+{
+  background-color:#F00;
+  opacity:0.3;
+  font-size:30px;
+}

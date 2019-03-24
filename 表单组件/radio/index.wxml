@@ -1,0 +1,17 @@
+
+<!-- 表单组件：radio -->
+<radio-group bindchange="radioChange">
+  <label style="display:block;margin:{{item.margin}}px" wx:for-items="{{radioItems}}">
+    <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+  </label>
+</radio-group>
+
+<!-- <radio-group bindchange="radioChange">
+  <label style="display:block;margin:10px" >
+    <radio value="USA" checked="false" />美国
+  </label>
+  <label style="display:block;margin:20px" >
+    <radio value="CHN" checked="true" />中国
+  </label>
+</radio-group>
+-->

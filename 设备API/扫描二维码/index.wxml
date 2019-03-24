@@ -1,0 +1,7 @@
+<view style="margin:20px;display: flex;flex-direction: column;">
+  <text style="word-wrap:break-word;">{{code}}</text>
+  <text>{{scanType}}</text>
+  <text>{{charSet}}</text>
+  <text style="word-wrap:break-word;">{{path}}</text>
+  <button style="margin-top:20px" bindtap="onClick_ScanCode">扫描二维码</button>
+</view>  

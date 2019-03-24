@@ -1,0 +1,12 @@
+<view style="margin:20px">
+  <input style="border-bottom: 1px solid #eee;" type="text" placeholder="key" name="key" value="{{key}}" bindinput="keyChange">
+  </input>
+  <input style="margin-top:30px;border-bottom: 1px solid #eee;" type="text" placeholder="data" name="data" value="{{data}}" bindinput="dataChange"></input>
+  <button style="margin-top:30px" bindtap="saveKeyValue">异步保存key-value值</button>
+  <button style="margin-top:30px" bindtap="loadKeyValue">异步装载key-value值</button>
+  <button style="margin-top:30px" bindtap="syncSaveKeyValue">同步保存key-value值</button>
+  <button style="margin-top:30px" bindtap="syncLoadKeyValue">同步装载key-value值</button>  
+  <button style="margin-top:30px" bindtap="getStorageInfo">获取存储信息</button>  
+  <button style="margin-top:30px" bindtap="removeStorage">移除指定的key-value值</button>    
+  <button style="margin-top:30px" bindtap="clearStorage">清除所有的key-value值</button>    
+</view>

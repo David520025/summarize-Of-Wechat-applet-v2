@@ -1,0 +1,7 @@
+<view style="margin:20px;display: flex;flex-direction: column;"> 
+  <button bindtap="onClick_setNavigationBarTitle">设置导航条标题</button>
+  <button style="margin-top:10px" bindtap="onClick_showNavigationBarLoading">显示导航条动画</button>
+  <button style="margin-top:10px" bindtap="onClick_hideNavigationBarLoading">隐藏导航条动画</button>
+  <button style="margin-top:10px" bindtap="onClick_navigateTo">跳转到page页面</button>
+  <button style="margin-top:10px" bindtap="onClick_redirectTo">跳转到page页面，并关闭当前页面</button>
+</view>   

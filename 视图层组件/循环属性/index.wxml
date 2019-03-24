@@ -1,0 +1,31 @@
+
+<!--  视图层技术：循环属性  -->
+<!--
+<view wx:for="{{array}}">
+  {{item}}
+</view>
+-->
+<view wx:for="{{messages}}">
+    messages[{{index}}] = {{item}}
+</view>
+
+<view wx:for = "{{messages}}" wx:for-item="name" wx:for-index="i">
+    messages[{{i}}] = {{name}}
+</view>
+
+<block wx:for="{{[1,2,3,4,5]}}" wx:for-item="n" wx:for-index="i">
+  <view>[{{i}}] = {{n}}</view>
+  <view>[{{i}}] * [{{i}}] = {{n * n}}</view>
+</block>
+
+<block wx:for="{{[1,5,9]}}" wx:for-item="i">
+  <view wx:for="{{[2,6,4]}}" wx:for-item="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{ i * j}}
+      </view>
+      <view wx:elif="{{i > j}}">
+        {{i}} + {{j}} = {{i + j}}
+      </view>
+  </view>
+</block>
+

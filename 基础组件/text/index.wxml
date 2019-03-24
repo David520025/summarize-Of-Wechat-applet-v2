@@ -1,0 +1,13 @@
+
+<!-- 基础组件：text -->
+
+<!--  text组件用来显示文本，支持转义符“\” -->
+<text style="margin:20px;font-size:40px;color:{{color}}">
+{{text}}
+  <text style="color:#00ffff">（最后一行）</text>
+</text>
+<view style="margin:20px">
+  <button bindtap="add">添加一行</button>
+  <button bindtap="remove">删除一行</button>
+  <button bindtap="setColor">设置文字颜色</button>
+</view>

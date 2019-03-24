@@ -1,0 +1,27 @@
+<!-- 表单组件：switch -->
+<!-- 进行二值切换
+两种风格：iOS和Android
+-->
+
+<view style="flex-direction:column;display:flex">
+   <label>
+       <switch style="margin:20px" checked="{{switch1Checked}}" bindchange="switchChange"/>
+       <text>Switch1</text>
+   </label>
+   <label>
+       <switch style="margin:20px" checked="{{switch2Checked}}" bindchange="switchChange"/>
+       <text>Switch1</text>
+   </label>
+   <label>
+       <switch style="margin:20px" checked="{{switch1Checked}}" bindchange="switchChange"
+       type="checkbox"
+       />
+       <text>Switch1</text>
+   </label>   
+   <label>
+   <switch style="margin:20px" checked="{{switch2Checked}}" bindchange="switchChange"
+       type="checkbox"
+       />
+       <text>Switch1</text>
+   </label>     
+</view>

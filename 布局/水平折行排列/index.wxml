@@ -1,0 +1,13 @@
+<view class="flex-wrp flex-row" style="flex-wrap:wrap" >
+    <view class="flex-item bc_green"></view>
+    <view class="flex-item bc_red"></view>
+    <view class="flex-item bc_blue"></view>
+    <view class="flex-item bc_green"></view>
+    <view class="flex-item bc_red"></view>
+    <view class="flex-item bc_blue"></view>
+    <view class="flex-item bc_green"></view>
+    <view class="flex-item bc_red"></view>
+    <view class="flex-item bc_blue"></view>
+</view>
+  
+   

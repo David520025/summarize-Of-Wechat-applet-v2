@@ -1,0 +1,41 @@
+<!-- 表单组件：picker -->
+<!--  选择器组件  
+1.  普通的数据
+2.  时间
+3.  日期
+-->
+
+<view style="margin:20px">
+    <view style="margin-left:15px">地区选择器</view>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view style="padding:13px;">
+          当前选择：{{array[index]}}
+        </view>
+    </picker>
+</view>
+<view style="margin:20px">
+    <view style="margin-left:15px">时间选择器</view>
+    <picker mode="time" bindchange="bindTimeChange" value="{{time}}" start="09:01" end="21:30">
+        <view style="padding:13px;">
+          当前选择：{{time}}
+        </view>
+    </picker>
+</view>
+
+<!--<view style="margin:20px">
+    <view style="margin-left:15px">日期选择器</view>
+    <picker mode="date" bindchange="bindDateChange" value="{{date}}" start="2015-09-01" end="2018-01-01">
+        <view style="padding:13px;">
+          当前选择：{{date}}
+        </view>
+    </picker>  
+</view>-->
+
+<view style="margin:20px">
+    <view style="margin-left:15px">日期选择器</view>
+    <picker mode="date" bindchange="bindDateChange1" fields="month" value="{{date1}}" start="2015-01" end="2018-01">
+        <view style="padding:13px;" >
+          当前选择：{{date1}}
+        </view>
+    </picker>
+</view>

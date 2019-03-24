@@ -1,0 +1,40 @@
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
+<view class="detail flex-box" url="">
+  <view class="detail-img">
+    <image class="img" src="{{films.MovieDetailModel.img}}"></image>
+    <image bindtap="vShow" class="detail-play" src="../../images/i-play.png"></image>
+  </view>
+  <view class="detail-main flex-btn">
+    <view class="detail-title detail-brief">
+      <text>{{films.MovieDetailModel.nm}}</text>
+
+      <!--  标题 -->
+      <image class="i-imax" wx:if="{{films.MovieDetailModel.imax}}" src="../../images/i-imax.png"></image>
+      <image class="i-imax" wx:if="{{films.MovieDetailModel.preSale}}" src="../../images/i-imax.png"></image>
+    </view>
+    <view class="detail-brief">{{films.MovieDetailModel.scm}}</view>
+
+    <!-- 介绍 -->
+    <view class="detail-brief">{{films.MovieDetailModel.cat}}</view>
+
+    <!-- 影片类型  -->
+    <view class="detail-brief">{{films.MovieDetailModel.src}} / {{films.MovieDetailModel.dur}}分钟</view>
+
+    <!-- 地区/时间  -->
+    <view class="detail-brief">{{films.MovieDetailModel.rt}}</view>
+
+    <!-- 上映时间  -->
+    <view class="detail-size">
+      <view class="star">
+        <view style="width: {{films.MovieDetailModel.sc * 10}}%" class="stars"></view>
+      </view>{{films.MovieDetailModel.sc}}</view>
+  </view>
+  <image class="bg" src="http://geekori.com/test/blue_bg.png"></image>
+  <video class="{{video}}"  src="{{films.MovieDetailModel.vd}}" controls></video>
+</view>
+<scroll-view class="details-dra">
+  <view>{{details}}</view>
+</scroll-view>
+<button type="primary" size="{{primarySize}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="pay"> 立即购票 </button>

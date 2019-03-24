@@ -1,0 +1,4 @@
+<view style="margin:20px">
+  <input placeholder="请输入返回第几层页面" style="margin:20px" value="{{value}}" bindinput="charInput"/>
+  <button style="margin:20px" bindtap="onClick_navigateBack">返回</button>
+</view>

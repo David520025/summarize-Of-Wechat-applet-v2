@@ -1,0 +1,17 @@
+<!-- 基础组件：progress -->
+<!--  progress用来显示进度  -->
+<!--  
+
+1. percent：Float类型，默认值时0，可以取值0到100
+2. show-info：Boolean类型，默认值时falsefalse
+3. stroke-width：Number类型，默认值时6，用于设置进度条的宽度
+4. color：Color类型，默认值时#09BB07，用于设置进度条的颜色
+5. active：Boolean类型，默认值时false
+-->
+
+<view style="margin:30px">
+  <progress percent="20" show-info/>
+  <progress percent="30"  color="red" show-info/>
+  <progress percent="50" active/>
+  <progress percent="60" stroke-width="20" style="margin-top:30px"/>
+</view>

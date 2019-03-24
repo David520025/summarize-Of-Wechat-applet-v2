@@ -1,0 +1,16 @@
+
+<!-- 表单组件：slider -->
+<view style="margin:20px">
+  <view style="margin:20px">
+    <text style="margin:15px">设置step</text>
+    <slider value="60" bindchange="sliderchange" step="5" />
+  </view>
+  <view style="margin:20px">
+    <text style="margin:15px">显示当前值</text>
+    <slider value="50" bindchange="sliderchange" show-value/>
+  </view>
+  <view style="margin:20px">
+    <text style="margin:15px">设置最小值/最大值</text>
+    <slider value="100" bindchange="sliderchange" min="50" max="200" show-value/>
+  </view>
+</view>
